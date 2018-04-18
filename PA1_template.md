@@ -6,6 +6,7 @@ output:
 ---
 
 
+
 ## Loading and preprocessing the data
 
 1. Load the data from zip file in working directory:
@@ -42,7 +43,7 @@ qplot(TotalSteps$steps,
       main = "Histogram of Total Steps Taken Each Day")
 ```
 
-![](PA1_template_files/figure-html/Total Histogram-1.png)<!-- -->
+![](Figs/Total Histogram-1.png)<!-- -->
 
 2. Calculate and report the mean and median of the total number of steps taken per day
 
@@ -69,7 +70,7 @@ qplot(interval, steps, data = AvgStep, geom = "line") +
       ggtitle("Average Steps Taken Per 5-Minute Interval")
 ```
 
-![](PA1_template_files/figure-html/Total Time Series Plot-1.png)<!-- -->
+![](Figs/Total Time Series Plot-1.png)<!-- -->
 
 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -127,7 +128,7 @@ qplot(TotalStepsImputed$steps,
       main = "Histogram of Total Steps Taken Each Day")
 ```
 
-![](PA1_template_files/figure-html/Imputed Data Histogram-1.png)<!-- -->
+![](Figs/Imputed Data Histogram-1.png)<!-- -->
 
 
 
@@ -163,6 +164,6 @@ qplot(interval, steps, data = AvgWeekdayStep, geom = "line", facets = Weekend ~.
   facet_wrap(~Weekend, ncol = 1)
 ```
 
-![](PA1_template_files/figure-html/Imputed Data Time Series Plot-1.png)<!-- -->
+![](Figs/Imputed Data Time Series Plot-1.png)<!-- -->
 
 
